@@ -55,7 +55,7 @@
     <section class="registration">
       <h2>Registration Form</h2>
 
-      <form name="sample" class="formulario" action="show_data.html" method="get">
+      <form name="sample" class="formulario" action="show_data.html" method="get" onsubmit="return comparador()">
         <div class="season">
           <label>
             Season:</label>
@@ -158,31 +158,34 @@
 
         <div class="schools">
           <p>Which elementary schools do you live near?</p>
+          <p id="mensajeError">* Debe seleccionar escuelas distintas</p>
           <div class="form_line">
             <div class="form_half">
               <label>
                 First Closest School:</label><br>
-              <select class="first_school" name="first_school" required>
-                <option value="Choose one" disabled selected>Choose one... </option>
-                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
-                <option value="Marjorie P Hart">Marjorie P Hart</option>
-                <option value="Greenbay">Greenbay</option>
-                <option value="North Elementary">North Elementary</option>
-                <option value="Howard A Yeager">Howard A Yeager</option>
-                <option value="South Elementary">South Elementary</option>
+              <select id="first_school" name="First_School" onchange="comparador()" required>
+                <option value="Choose one" name="first_school" disabled selected hidden>Choose one...
+                </option>
+                <option value="AJ Katzenmaier" name="first_school">AJ Katzenmaier</option>
+                <option value="Marjorie P Hart" name="first_school">Marjorie P Hart</option>
+                <option value="Greenbay" name="first_school">Greenbay</option>
+                <option value="North Elementary" name="first_school">North Elementary</option>
+                <option value="Howard A Yeager" name="first_school">Howard A Yeager</option>
+                <option value="South Elementary" name="first_school">South Elementary</option>
               </select>
             </div>
             <div class="form_half">
               <label>
                 Second Closest School:</label><br>
-              <select class="second_school" name="second_school" required>
-                <option value="Choose one" disabled selected>Choose one... </option>
-                <option value="AJ Katzenmaier">AJ Katzenmaier</option>
-                <option value="Marjorie P Hart">Marjorie P Hart</option>
-                <option value="Greenbay">Greenbay</option>
-                <option value="North Elementary">North Elementary</option>
-                <option value="Howard A Yeager">Howard A Yeager</option>
-                <option value="South Elementary">South Elementary</option>
+              <select id="second_school" name="Second_School" onchange="comparador()" required>
+                <option value="Choose one" name="second_school" disabled selected hidden>Choose one...
+                </option>
+                <option value="AJ Katzenmaier" name="second_school">AJ Katzenmaier</option>
+                <option value="Marjorie P Hart" name="second_school">Marjorie P Hart</option>
+                <option value="Greenbay" name="second_school">Greenbay</option>
+                <option value="North Elementary" name="second_school">North Elementary</option>
+                <option value="Howard A Yeager" name="second_school">Howard A Yeager</option>
+                <option value="South Elementary" name="second_school">South Elementary</option>
               </select>
             </div>
             <div class="clear_form"></div>
@@ -276,6 +279,6 @@
       </form>
 
     </section>
-
+    <script src="registration.js"></script>
   </body>
 </html>

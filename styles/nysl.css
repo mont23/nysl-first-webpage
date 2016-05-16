@@ -395,6 +395,11 @@ label {
   color: #404040;
   float: left;
 }
+#mensajeError{
+  color:red;
+  font-size: 11px;
+  display: none;
+}
 .schools label {
   margin-left: 3%;
 }
