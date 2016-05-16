@@ -1,0 +1,460 @@
+body {
+  background-color: #FAFAFA;
+  font-family: 'Helvetica Neue';
+  padding: 0;
+  margin: 0;
+  min-width: 788px;
+}
+header {
+  position: relative;
+  width: 100%;
+}
+.imagen_encabezado {
+  position: relative;
+  height: 350px;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.NYSL_titulo h1 {
+  font-size: 50px;
+  padding: 5px 0 0 10px;
+  color: white;
+  margin: 0;
+  text-align: left;
+  text-shadow: 1px 1px grey;
+}
+.encabezado_index .imagen_encabezado {
+  background-image: url(image1.jpeg);
+  background-position: 14% 7%;
+}
+.encabezado_about .imagen_encabezado {
+  background-image: url(image7.jpg);
+  background-position: 20% 20%;
+}
+.encabezado_contact .imagen_encabezado {
+  background-image: url(image6.jpg);
+  background-position: 0 50%;
+}
+.encabezado_rules .imagen_encabezado {
+  background-image: url(image4.jpg);
+  background-position: 0 40%;
+}
+.encabezado_gameinfo .imagen_encabezado {
+  background-image: url(image5.jpg);
+  background-position: 0 50%;
+}
+.encabezado_join .imagen_encabezado {
+  background-image: url(image8.jpg);
+  background-position: 0 30%;
+}
+nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #033949;
+  height: 50px;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  display: inline-block;
+  background-color: #033949;
+  width: 13%;
+  text-align: center;
+  border-right: 1px solid #A3FF15;
+}
+.activo {
+  color: white;
+  font-weight: bolder;
+}
+.inactivo {
+  color: #E0E0E0;
+  font-weight:200;
+}
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none;
+}
+.inactivo:hover {
+  color: white;
+  font-weight: bolder;
+}
+.join {
+  float: right;
+  margin-right: 20%;
+  margin-top: -41px;
+  color: #033949;
+  background-color: #A3FF15;
+  padding: 4px 8px 4px 8px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.join:hover {
+  background-color: #CBF788;
+  font-weight: bolder;
+}
+.logo {
+  position: relative;
+  float: right;
+  margin-top: -35px;
+  right: 4%;
+}
+.logo_estilo {
+  height: 120px;
+}
+
+/*Fin header----------------------*/
+
+.clear {
+  margin-top: 2%;
+  clear: both;
+}
+aside {
+  float: left;
+  width: 15%;
+  margin-left: 5%
+}
+section {
+  float: right;
+  width: 72%;
+  margin-top: 5%;
+  padding-right: 5%;
+  text-align: justify;
+}
+.subcontenido {
+  margin-left: 5%;
+}
+
+/* Home */
+
+.proximos_eventos {
+  width: 40%;
+  float: left;
+}
+.video_presentacion {
+  width: 50%;
+  float: right;
+  margin-left: 10%;
+  margin-bottom: 5%;
+}
+.video_presentacion iframe {
+  width: 80%;
+  height: 225px;
+}
+
+/*  About  */
+
+.about_1, .about_2, .about_3 {
+  float: left;
+  width: 28%;
+  margin-right: 5%;
+}
+.about_header {
+  display: block;
+  width: 100%;
+  height: 70px;
+}
+.about_logo {
+  float: left;
+  margin-right: 5%;
+}
+.about_title {
+  float: left;
+}
+.grl_info {
+  margin-top: 5px;
+}
+.about_content {
+  margin-top: 2%;
+  display: block;
+}
+.about_logo img {
+  width: 50px;
+}
+.info_logo {
+  float: left;
+  margin-right: 5%;
+}
+.info_logo img {
+  width: 40px;
+}
+
+/* Rules & Policies */
+
+.seccion_normas h2 {
+  font-size: 25px;
+}
+.seccion_normas h2, .seccion_normas h3 {
+  text-align: center;
+}
+.principal {
+  text-align: justify;
+}
+.fifa_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.principal > li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+.principal h4 {
+  text-align: left;
+  margin: 0;
+  display: inline-block;
+}
+.principal .team_bench_areas li {
+  list-style-type: square;
+}
+.principal .allplay_exception {
+  list-style-type: circle;
+}
+.principal ul {
+  list-style-type: square;
+}
+.principal ol li {
+  list-style-type: decimal;
+  margin-bottom: 15px;
+}
+.principal ol ol li {
+  list-style-type: lower-latin;
+  margin-bottom: 0;
+}
+.principal ul ol li {
+  margin-bottom: 0;
+}
+
+/* Game  */
+
+.seccion_info h2 {
+  text-align: center;
+  font-size: 25px;
+}
+.seccion_info h3 {
+  font-style: italic;
+}
+table {
+  margin-bottom: 20px;
+}
+.September th, .October th {
+  text-decoration: underline;
+}
+th, td {
+  width: 15%;
+}
+.September tr td:nth-child(1) {
+  padding-right: 11%;
+  text-align: center;
+}
+.September th:first-child, .October th:first-child {
+  text-transform: uppercase;
+  padding-left: 2%;
+}
+.October tr td:nth-child(1) {
+  padding-right: 11%;
+  text-align: center;
+}
+.game_location {
+  width: 90%;
+}
+.anotacion {
+  text-decoration: underline;
+  font-style: italic;
+}
+.extra_info p {
+  text-decoration: none;
+}
+.titulo_info {
+  font-weight: bold;
+}
+.extra_info p:nth-child(4), .extra_info p:nth-child(5) {
+  display: inline-block;
+}
+.extra_info p:nth-child(4) {
+  margin-right: 25%;
+}
+.extra_info p:nth-child(2) {
+  width: 85%;
+}
+.mapas {
+  width: 100%;
+  margin-top: 4%;
+}
+.maps_half {
+  width: 50%;
+  float: left;
+  margin-bottom: 4%;
+}
+.maps_half iframe {
+  width: 90%;
+  height: 300px;
+  border: 0;
+  box-shadow: 4px 4px 2px #E0E0E0;
+}
+
+/* Contact */
+
+.email {
+  color: #17278B;
+}
+.contact_form {
+  width: 40%;
+  float: left;
+  margin-right: 10%;
+}
+.contact_form input {
+  margin-bottom: 4%;
+}
+.contact_form label {
+  color: gray;
+}
+.contact_form select {
+  background: url("arrow.png") no-repeat right #fff;
+  background-size: contain;
+  background-position: right 4px;
+  height: 38px;
+  width: 96%;
+  padding: 1px;
+  font-size: 14px;
+  margin-bottom: 4%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid #BFBFBF;
+  color: #A9A9A9;
+  font-family: "Helvetica Neue";
+  padding-left: 5px;
+  cursor: pointer;
+}
+.contact_form input[type="text"] {
+  font-family: "Helvetica Neue";
+  height: 35px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+.contact_form textarea {
+  font-family: "Helvetica Neue";
+  width: 95%;
+  height: 70px;
+  font-size: 14px;
+  padding-left: 5px;
+  margin-bottom: 4%;
+  border: 1px solid #BFBFBF;
+  border-radius: 3px;
+}
+.contact_info {
+  width: 50%;
+  float: right;
+}
+.contact_info iframe {
+  width: 80%;
+  height: 250px;
+  border: 0;
+  box-shadow: 4px 4px 2px #E0E0E0;
+}
+.contact_info img {
+  height: 20px;
+  margin-right: 2%;
+}
+
+/* Form */
+
+.registration {
+  width: 70%;
+  line-height: 25px;
+}
+.registration h2 {
+  text-align: center;
+  margin: -1% 10% 5% 0%;
+}
+.form_line {
+  width: 100%;
+  padding-bottom: 2%;
+}
+.form_half {
+  width: 50%;
+  float: left;
+}
+.season {
+  margin-bottom: 3%;
+  width: 30%;
+  display: inline-flex;
+}
+.season input[type="text"] {
+  background-color: #FAFAFA;
+  font-size: 17px;
+  height: 22px;
+  padding-left: 4px;
+}
+label {
+  width: 80%;
+  margin-right: 0px;
+  font-size: 15px;
+  color: #404040;
+  float: left;
+}
+.schools label {
+  margin-left: 3%;
+}
+.schools select {
+  font-size: 16px;
+  margin-left: 3%;
+}
+input[type="text"], input[type="date"], input[type="email"] {
+  width: 95%;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 1px solid #BFBFBF;
+}
+input[name="address"], input[name="parent"] {
+  width: 97.5%;
+}
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.form_sizes label, .player_position label, .gender label {
+  width: 21%;
+}
+.player_grade label {
+  width: auto;
+}
+.clear_form {
+  clear: both;
+}
+.consentimiento h6 {
+  text-decoration: underline;
+  font-weight: bolder;
+  font-size: 12px;
+  height: 6px;
+}
+.consentimiento p, .consentimiento label {
+  font-size: 11px;
+}
+.consentimiento input {
+  width: 71%;
+  height: 22px;
+  font-size: 10px;
+}
+.consentimiento label {
+  width: 95%;
+}
+input[type="submit"] {
+  margin: 5% 0% 5% 0%;
+  font-family: "Helvatica Neue";
+  cursor: pointer;
+  font-size: 18px;
+  color: #575657;
+  padding: 4px 20px;
+  background-color: #A4E856;
+  border: 0px;
+  border-radius: 2px;
+  box-shadow: 0 0 7px 0 #BFBFBF;
+}
+input[type="submit"]:hover {
+  border: 2px solid #BDBDBD;
+  border-radius: 4px;
+}
